@@ -47,12 +47,13 @@ class BeautymailServiceProvider extends ServiceProvider
         $this->app->singleton('Snowfire\Beautymail\Beautymail',
             function ($app) {
                 return new \Snowfire\Beautymail\Beautymail(
-                    array_merge(
-                        config('beautymail.view'),
-                        [
-                            'css' => !is_null(config('beautymail.css')) && count(config('beautymail.css')) > 0 ? implode(' ', config('beautymail.css')) : '',
-                        ]
-                    )
+                    // array_merge(
+                    //     config('beautymail.view'),
+                    //     [
+                    //         'css' => !is_null(config('beautymail.css')) && count(config('beautymail.css')) > 0 ? implode(' ', config('beautymail.css')) : '',
+                    //     ]
+                    // )
+                    config('beautymail.view')
                 );
             });
     }

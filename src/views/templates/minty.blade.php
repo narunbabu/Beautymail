@@ -3,11 +3,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<style type="text/css">{{ file_get_contents(app_path() . '/../vendor/snowfire/beautymail/src/styles/css/minty.css') }}</style>
-	@if($css)
+	{{--  @if($css)
 	<style type="text/css">
 		{{ $css }}
 	</style>
-	@endif
+	@endif  --}}
 </head>
 <body>
 
@@ -106,13 +106,13 @@
 						<td width="100%" height="5"></td>
 					</tr>
 					<!-- Spacing -->
-					@if ($unsubscribe)
+					{{--  @if ($unsubscribe)
 					<tr>
 						<td align="center" valign="middle" style="font-family: Helvetica, arial, sans-serif; font-size: 10px;color: #999999" st-content="preheader">
 							{{ $unsubscribe }}
 						</td>
 					</tr>
-					@endif
+					@endif  --}}
 					<!-- Spacing -->
 					<tr>
 						<td width="100%" height="5"></td>
